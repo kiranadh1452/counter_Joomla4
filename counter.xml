@@ -29,6 +29,11 @@
     this XML file is, the namespace must match (ignoring CamelCase). 
     -->
     <namespace path="src/">KiranAdhikari\Component\Counter</namespace>
+
+    <files folder="site/">
+        <folder>src</folder>
+        <folder>tmpl</folder>
+    </files>
             
     <administration>
         <!-- The link that will appear in the Admin panel's "Components" menu -->
