@@ -34,6 +34,10 @@
         <folder>src</folder>
         <folder>tmpl</folder>
     </files>
+
+    <languages>
+        <language tag="en-GB">site/language/en-GB/en-GB.com_counter.ini</language>
+    </languages>
             
     <administration>
         <!-- The link that will appear in the Admin panel's "Components" menu -->
@@ -45,6 +49,12 @@
             <folder>src</folder>
             <folder>tmpl</folder>
         </files>
+
+        <languages>
+            <language tag="en-GB">admin/language/en-GB/en-GB.com_counter.ini</language>
+            <language tag="en-GB">admin/language/en-GB/en-GB.com_counter.sys.ini</language>
+        </languages>
+
     </administration>
 
 </extension>
