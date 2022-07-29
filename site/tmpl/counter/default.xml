@@ -3,4 +3,17 @@
     <layout title="COM_COUNTER_MENU_COUNTER_TITLE">
         <message><![CDATA[COM_COUNTER_MENU_COUNTER_DESC]]></message>
     </layout>
+
+    <fields name="request">
+        <fieldset name="request">
+            <field  name="greetingType"
+                    type="list"
+                    label="COM_COUNTER_GREETING_PARAM_LABEL"
+                    description="COM_COUNTER_GREETING_PARAM_DESC"
+                    default="1">
+                <option value="1"><![CDATA[COM_COUNTER_GREETING_TYPE_WELCOME_PARAM]]></option>
+                <option value="2"><![CDATA[COM_COUNTER_GREETING_TYPE_BYE_PARAM]]></option>
+            </field>
+        </fieldset>
+    </fields>
 </metadata>
