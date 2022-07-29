@@ -4,6 +4,7 @@ namespace KiranAdhikari\Component\Counter\Administrator\Controller;
 
 defined('_JEXEC') or die;
 
+use Joomla\CMS\Factory;
 use Joomla\CMS\MVC\Controller\BaseController;
 
 /**
@@ -20,16 +21,26 @@ use Joomla\CMS\MVC\Controller\BaseController;
  * @package     Joomla.Administrator
  * @subpackage  com_counter
  */
-class DisplayController extends BaseController {
+class DisplayController extends BaseController
+{
     /**
      * The default view for the display method.
      *
      * @var string
      */
     protected $default_view = 'counter';
-    
-    public function display($cachable = false, $urlparams = array()) {
-        return parent::display($cachable, $urlparams);
+
+    public function display($cachable = false, $urlparams = array())
+    {
+        $document = Factory::getDocument();
+        $viewName = $this->input->getCmd('view', 'counter');
+        $viewFormat = $document->getType();
+
+        $view = $this->getView($viewName, $viewFormat);
+        $view->setModel($this->getModel('User'), true);
+
+        $view->document = $document;
+        $view->display();
     }
-    
+
 }

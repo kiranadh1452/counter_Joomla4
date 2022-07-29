@@ -17,8 +17,7 @@ use Joomla\CMS\Language\Text;
 
 
 /**
- * Hello World Message Model
- * @since 0.0.5
+ * Message Model
  */
 class MessageModel extends ItemModel {
 

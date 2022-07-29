@@ -13,4 +13,5 @@ use Joomla\CMS\Language\Text;
 // No direct access to this file
 defined('_JEXEC') or die('Restricted Access');
 ?>
-<h2><?= Text::_('COM_COUNTER_MSG_COUNTER') ?></h2>
+<h2><?=Text::_('COM_COUNTER_MSG_COUNTER')?></h2>
+<h3><?=$this->getModel()->getItem()->name?></h3>
