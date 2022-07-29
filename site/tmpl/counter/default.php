@@ -14,3 +14,4 @@ use Joomla\CMS\Language\Text;
 defined('_JEXEC') or die('Restricted Access');
 ?>
 <h2><?=Text::_('COM_COUNTER_MSG_COUNTER')?></h2>
+<p><?=$this->getModel()->getItem()->message?></p>
